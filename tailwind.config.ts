@@ -7,9 +7,13 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    { pattern: /text-./, variants: ["hover"]},
+  ],
   theme: {
   	extend: {
   		colors: {
+			linkedin: '#0e76a8',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
