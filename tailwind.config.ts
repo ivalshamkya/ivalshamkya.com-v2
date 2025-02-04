@@ -5,15 +5,15 @@ export default {
     content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+	"./src/components/modules/**/*.{js,ts,jsx,tsx,mdx}",
+	"./src/components/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  safelist: [
-    { pattern: /text-./, variants: ["hover"]},
+	"./src/common/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
   	extend: {
   		colors: {
-			linkedin: '#0e76a8',
+			// linkedin: '#0e76a8',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
