@@ -1,21 +1,18 @@
 "use client";
-import { Fragment, useEffect, useState } from "react";
-// import { motion } from "framer-motion";
+import { Fragment } from "react";
 import { dataNavbar } from "@/common/constant/navbar-links";
-// import { CgDarkMode } from "react-icons/cg";
 import { METADATA } from "@/common/constant/metadata";
-import { Moon, MoonIcon, Sun } from "lucide-react";
 import { ThemeSwitcher } from "@/components/modules/ThemeSwitcher";
 import { Status } from "@/components/modules/Status";
 
-interface Navigation {
+interface NavigationProp {
   active: string;
 }
 
-const Navbar: React.FC<Navigation> = ({ active }) => {
+const Navbar: React.FC<NavigationProp> = ({ active }) => {
   return (
-    <Fragment>
-      <nav className="w-full p-3 md:p-8 border-b border-neutral-300 dark:border-neutral-800 bg-white dark:bg-secondary flex justify-between items-center z-50">
+    <>
+      <nav className="w-full p-3 md:p-8 border-b border-neutral-300 dark:border-neutral-800 flex justify-between items-center z-50">
         {METADATA.authors.isAvailable ? (
           <Status />
         ) : (
@@ -32,7 +29,7 @@ const Navbar: React.FC<Navigation> = ({ active }) => {
                 key={`${navigate}`}
                 className={`relative w-[5rem] p-2 md:p-3 text-sm md:text-base text-center text-primary transition-all ease-in duration-75 ${
                   active === navigate_url
-                    ? "text-white font-[500] active doodle-underline"
+                    ? "text-primary font-[500] active doodle-underline"
                     : "text-primary/80 hover:text-primary font-normal"
                 }`}
               >
@@ -43,7 +40,7 @@ const Navbar: React.FC<Navigation> = ({ active }) => {
         </div>
         <ThemeSwitcher />
       </nav>
-    </Fragment>
+    </>
   );
 };
 

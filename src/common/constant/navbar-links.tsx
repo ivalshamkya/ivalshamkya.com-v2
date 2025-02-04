@@ -1,6 +1,6 @@
 import { Navbar } from "@/common/types/navbar";
 import { BiSolidContact } from "react-icons/bi";
-import { BsHouseFill, BsSuitcaseLgFill } from "react-icons/bs";
+import { IoExtensionPuzzleOutline, IoHomeOutline } from "react-icons/io5";
 import { RiNewsFill } from "react-icons/ri";
 
 export const dataNavbar: Navbar[] = [
@@ -9,14 +9,14 @@ export const dataNavbar: Navbar[] = [
       navigate: "Home",
       navigate_url: "",
       offset: -100,
-      icon: <BsHouseFill />,
+      icon: <IoHomeOutline />,
     },
     {
       id: 1,
       navigate: "Projects",
       navigate_url: "projects",
       offset: -105,
-      icon: <BsSuitcaseLgFill />,
+      icon: <IoExtensionPuzzleOutline />,
     },
     {
       id: 3,
