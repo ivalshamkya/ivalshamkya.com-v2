@@ -7,7 +7,7 @@ export const dataExperiences: IExperience[] = [
     id: 0,
     company: {
         name: 'Jobseeker Company',
-        logo: 'https://www.jobseeker.software/logo-js.png',
+        logo: 'https://media.licdn.com/dms/image/v2/C560BAQEslRlbfdMkcA/company-logo_200_200/company-logo_200_200/0/1673241564608/jobseeker_company_logo?e=2147483647&v=beta&t=xrWxj42oKGlaTYxaI09c6dGSYEAsfG4GOeiT4RC1bhU',
         website: 'https://www.jobseeker.software'
     },
     position: "Fullstack Engineer",
@@ -23,7 +23,7 @@ export const dataExperiences: IExperience[] = [
     id: 1,
     company: {
         name: 'Pao Dev',
-        logo: 'https://www.jobseeker.software/logo-js.png'
+        logo: 'https://media.licdn.com/dms/image/v2/D560BAQGYtgTadofvWQ/company-logo_200_200/company-logo_200_200/0/1704953826751?e=1746662400&v=beta&t=IlZ59pL8DXuNJ3xthGISW5KA2ccPonby_2LHpzVUTfM'
     },
     position: "Software Engineer",
     startDate: new Date("2021-01-01"),

@@ -32,6 +32,9 @@ import {
   SiSpring,
   SiMongodb,
   SiFastapi,
+  SiAmazonwebservices,
+  SiVercel,
+  SiNetlify,
 } from "react-icons/si";
 import { ISkill } from "@/common/types/skill";
 
@@ -71,4 +74,7 @@ export const STACKS: ISkill = {
   Github: <SiGithub size={iconSize} className="transition-icon hover:text-primary" />,
   Python: <SiPython size={iconSize} className="transition-icon hover:text-yellow-400" />,
   Streamlit: <SiStreamlit size={iconSize} className="transition-icon hover:text-red-500" />,
+  AWS: <SiAmazonwebservices size={iconSize} className="transition-icon hover:text-primary" />,
+  Vercel: <SiVercel size={iconSize} className="transition-icon hover:text-primary" />,
+  Netlify: <SiNetlify size={iconSize} className="transition-icon hover:text-[#06bdb8]" />,
 };

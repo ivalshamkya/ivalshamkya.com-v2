@@ -12,7 +12,7 @@ const Sidenav: React.FC<ISidenav> = ({ active, direction = "ltr", data }) => {
     <>
       <aside
         className={`
-        border-neutral-300 dark:border-neutral-800 h-svh hidden lg:block sticky top-0
+        border-neutral-300 dark:border-neutral-800 h-svh hidden lg:block sticky top-0 z-[999]
           ${direction === "ltr" ? "border-r" : "border-l"} 
          `}
       >

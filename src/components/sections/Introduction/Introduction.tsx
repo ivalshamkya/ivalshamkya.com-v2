@@ -38,7 +38,7 @@ const Introduction: React.FC = () => {
             with new web app technologies. Also, your comments, questions, and
             shared experiences are always welcome here.
           </p>
-          <div className="flex gap-1">
+          <div className="flex gap-2.5">
             <Button variant={"space"} size={"lg"}>
               <Download />
               Download Resume

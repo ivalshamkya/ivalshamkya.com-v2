@@ -19,21 +19,21 @@ const ExperienceCard: React.FC<IExperience> = ({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 20, x: -500 }}
+      whileInView={{ opacity: 1, y: 0, x: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className="p-5 border rounded-lg"
+      transition={{ duration: 1, ease: "easeIn" }}
+      className="p-5 border rounded-2xl"
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex justify-between mb-7 md:mb-10"
+        transition={{ duration: 0.7, delay: 0.8 }}
+        className="flex justify-between mb-7 md:mb-8"
       >
         <div className="flex items-center gap-5">
-          <div className="relative p-8 bg-neutral-100 dark:bg-neutral-900 border rounded-lg">
+          <div className="relative overflow-hidden p-8 bg-neutral-100 dark:bg-neutral-900 border rounded-xl">
             <Image
               src={company.logo}
               alt={company.name}
@@ -57,7 +57,7 @@ const ExperienceCard: React.FC<IExperience> = ({
             <h1 className="block md:hidden text-sm md:text-base">{`${formatDate(
               startDate.toISOString(),
               "MMMM, YYYY"
-            )} - ${endDate?.getFullYear() || "Present"}`}</h1>
+            )} - ${formatDate(startDate.toISOString(), "MMMM, YYYY") || "Present"}`}</h1>
           </div>
         </div>
         <div className="hidden md:flex flex-col items-center">
@@ -70,7 +70,7 @@ const ExperienceCard: React.FC<IExperience> = ({
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.4 }}
+        transition={{ duration: 0.7, delay: 0.8 }}
         className="flex flex-wrap gap-2 mt-2"
       >
         {skillsInArray.map(([name, icon], index) => (
@@ -81,11 +81,11 @@ const ExperienceCard: React.FC<IExperience> = ({
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.4 }}
+        transition={{ duration: 0.7, delay: 0.8 }}
         className="mt-3 bg-neutral-50 dark:bg-neutral-900 border rounded-lg p-5"
       >
         <h1 className="text-xl mb-2.5 font-semibold">{position}</h1>
-        <p className="text-primary/80 text-sm">{description}</p>
+        <p className="text-primary/90 text-sm font-light">{description}</p>
       </motion.div>
     </motion.div>
   );
