@@ -7,7 +7,6 @@ import { JSX } from "react";
 import ExperienceSkill from "./ExperienceSkill";
 
 const ExperienceCard: React.FC<IExperience> = ({
-  id,
   company,
   position,
   description,

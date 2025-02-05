@@ -1,6 +1,5 @@
 import { Navbar } from "@/common/types/navbar";
 import { BiRocket, BiSolidContact } from "react-icons/bi";
-import { BsRocket } from "react-icons/bs";
 import { IoExtensionPuzzleOutline, IoHomeOutline } from "react-icons/io5";
 import { RiNewsFill } from "react-icons/ri";
 

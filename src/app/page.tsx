@@ -1,6 +1,5 @@
 "use client";
 
-import { dataExperiences } from "@/common/constant/experiences-list";
 import { dataNavbar } from "@/common/constant/navbar-links";
 import { Experiences } from "@/components/modules/Experience";
 import { Footer } from "@/components/modules/Footer";
@@ -11,10 +10,8 @@ import { Sidenav } from "@/components/modules/Sidenav";
 import { Skills } from "@/components/modules/Skills";
 import { Socials } from "@/components/modules/Socials";
 import { Introduction } from "@/components/sections/Introduction";
-import { Rocket } from "lucide-react";
 import { BiRocket } from "react-icons/bi";
 import { BsSuitcaseLg } from "react-icons/bs";
-import { SiRocket } from "react-icons/si";
 
 export default function Home() {
   return (

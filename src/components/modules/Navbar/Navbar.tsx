@@ -24,7 +24,7 @@ const Navbar: React.FC<NavigationProp> = ({ active }) => {
           }`}
         >
           <ul className="overflow-auto flex items-center cool-underline">
-            {dataNavbar.map(({ id, navigate, navigate_url, offset }) => (
+            {dataNavbar.map(({ navigate, navigate_url }) => (
               <li
                 key={`${navigate}`}
                 className={`relative w-[5rem] p-2 md:p-3 text-sm md:text-base text-center text-primary transition-all ease-in duration-75 ${

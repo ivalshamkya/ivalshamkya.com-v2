@@ -26,7 +26,7 @@ const Introduction: React.FC = () => {
                 Hello
               </span>{" "}
               <span className="text-primary">
-                it's me <div className="text-3xl ml-1.5 animate-wave">👋</div>
+                it&rsquo;s me <div className="text-3xl ml-1.5 animate-wave">👋</div>
               </span>
             </h2>
           </div>

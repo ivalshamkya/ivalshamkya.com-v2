@@ -20,7 +20,7 @@ const Experiences: React.FC = () => {
       animate="show"
       className="grid grid-cols-1 gap-4"
     >
-      {dataExperiences?.map((experience, index) => (
+      {dataExperiences?.map((experience) => (
         <ExperienceCard key={experience.id} {...experience} />
       ))}
     </motion.div>
