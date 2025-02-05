@@ -18,7 +18,7 @@ const ExperienceCard: React.FC<IExperience> = ({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20, x: -500 }}
+      initial={{ opacity: 0, y: 20, x: 0 }}
       whileInView={{ opacity: 1, y: 0, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 1, ease: "easeIn" }}
@@ -28,7 +28,7 @@ const ExperienceCard: React.FC<IExperience> = ({
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, delay: 0.8 }}
+        transition={{ duration: 0.7, delay: 0.82 }}
         className="flex justify-between mb-7 md:mb-8"
       >
         <div className="flex items-center gap-5">
@@ -69,7 +69,7 @@ const ExperienceCard: React.FC<IExperience> = ({
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, delay: 0.8 }}
+        transition={{ duration: 0.7, delay: 0.84 }}
         className="flex flex-wrap gap-2 mt-2"
       >
         {skillsInArray.map(([name, icon], index) => (
@@ -80,7 +80,7 @@ const ExperienceCard: React.FC<IExperience> = ({
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, delay: 0.8 }}
+        transition={{ duration: 0.7, delay: 0.86 }}
         className="mt-3 bg-neutral-50 dark:bg-neutral-900 border rounded-lg p-5"
       >
         <h1 className="text-xl mb-2.5 font-semibold">{position}</h1>

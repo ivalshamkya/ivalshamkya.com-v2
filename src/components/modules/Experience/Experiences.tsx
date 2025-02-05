@@ -18,7 +18,7 @@ const Experiences: React.FC = () => {
       variants={container}
       initial="hidden"
       animate="show"
-      className="grid grid-cols-1 gap-4"
+      className="grid grid-cols-1 gap-4 mt-10 md:mt-0"
     >
       {dataExperiences?.map((experience) => (
         <ExperienceCard key={experience.id} {...experience} />
