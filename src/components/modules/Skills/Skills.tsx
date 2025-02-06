@@ -15,7 +15,7 @@ const Skills: React.FC = () => {
       {Array.from({ length: 1 }, (_, index) => {
         const slider = [...stacksInArray].sort(() => Math.random() - 0.5)
         return (
-          <Marquee key={index} speed={70} direction={"right"}>
+          <Marquee key={index} speed={40} direction={"right"} pauseOnHover>
             {slider.map(([name, icon], index) => (
                 <SkillItem key={index} name={name} icon={icon} />
             ))}

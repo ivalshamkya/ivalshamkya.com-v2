@@ -1,3 +1,5 @@
+"use client"
+
 import { dataExperiences } from "@/common/constant/experiences-list";
 import ExperienceCard from "./ExperienceCard";
 import { motion } from "framer-motion"

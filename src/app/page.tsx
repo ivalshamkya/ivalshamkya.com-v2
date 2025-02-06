@@ -1,9 +1,8 @@
-"use client";
-
 import { dataNavbar } from "@/common/constant/navbar-links";
 import { Experiences } from "@/components/modules/Experience";
 import { Footer } from "@/components/modules/Footer";
 import { Navbar } from "@/components/modules/Navbar";
+import { Projects } from "@/components/modules/Projects";
 import { ScrollToTop } from "@/components/modules/ScrollToTop";
 import { SectionTitle } from "@/components/modules/SectionTitle";
 import { Sidenav } from "@/components/modules/Sidenav";
@@ -27,6 +26,8 @@ export default function Home() {
           <Experiences />
           <div className="h-screen bg-green-600/70"></div>
           <SectionTitle title="Projects" icon={<BiRocket />} description={"I love open source and I have been contributing to different projects for the some time. Here is a list of projects that I have contributed to and authored."} />
+          {/* <Projects /> */}
+          <Projects />
           <div className="h-screen bg-green-600/70"></div>
         </main>
         <Footer />
