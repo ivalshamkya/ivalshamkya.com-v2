@@ -19,15 +19,16 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        space: `bg-gradient-to-br from-neutral-100 via-neutral-50 to-white dark:from-neutral-950 dark:via-neutral-900 dark:to-neutral-800 border border-neutral-300 dark:border-neutral-700
-          hover:border-[#00ae29] hover:dark:border-[#006016]
-          hover:dark:to-[#00420f] hover:to-[#b8ffc8]
-          `,
+        space: `relative bg-gradient-to-br from-neutral-100 via-neutral-50 to-white dark:from-neutral-950 dark:via-neutral-900 dark:to-neutral-800 
+          border border-neutral-300 dark:border-neutral-700 
+          transition-all duration-300 ease-in-out
+          hover:border-[#4079ff] hover:dark:border-[#40ffaa] 
+          hover:dark:to-[#40ffaa]/30 hover:to-[#4079ff]`,
       },
       size: {
         default: "h-9 px-4 py-2",
         sm: "h-8 rounded-md px-3 text-xs",
-        lg: "h-10 rounded-md px-8",
+        lg: "h-10 rounded-md px-6 md:px-10",
         icon: "h-9 w-9",
       },
     },

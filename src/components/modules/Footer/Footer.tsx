@@ -3,7 +3,7 @@ import { METADATA } from "@/common/constant/metadata";
 const Footer: React.FC = () => {
   return (
     <>
-      <footer className="w-full p-3 md:p-8 border-t border-neutral-300 dark:border-neutral-800 bg-white dark:bg-secondary flex justify-between items-center">
+      <footer className="w-full p-3 md:p-8 border-t border-dashed border-neutral-300 dark:border-neutral-800 flex justify-between items-center">
       <div>
         <div className="flex items-center gap-1 text-sm py-1 text-neutral-600 dark:text-neutral-200">
         <span>&copy;</span>

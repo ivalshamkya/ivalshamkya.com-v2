@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
-import "@/app/globals.css"
 import { ThemeProvider } from "@/context/ThemeContext";
+import "@/app/globals.css"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description: "Ival Shamkya",
 };
 
-export default function RootLayout({
+export default function NotFoundLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -32,7 +32,9 @@ export default function RootLayout({
     <ThemeProvider>
       <html lang="en" className="dark">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased
+            selection:bg-green-300/70 selection:text-neutral-900 dark:selection:bg-[#49ff9b] dark:selection:text-neutral-900
+            `}
         >
           {children}
         </body>

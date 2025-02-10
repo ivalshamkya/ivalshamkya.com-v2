@@ -76,6 +76,7 @@ body {
 }
 
 .transition-icon {
+  color: hsl(var(--primary) / 0.77);
   transition: all linear 150ms;
 }
 
