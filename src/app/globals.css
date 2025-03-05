@@ -39,7 +39,7 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --background: 0 0% 7.17%;
+    --background: 0 0% 4.17%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -76,6 +76,7 @@ body {
 }
 
 .transition-icon {
+  color: hsl(var(--primary) / 0.77);
   transition: all linear 150ms;
 }
 

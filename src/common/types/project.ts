@@ -1,7 +1,13 @@
+import { ISkill } from "@/common/types/skill";
+
 export interface Project {
   id: number;
-  type: "image" | "text";
+  owner: string;
   image: string;
+  title: string;
   content: string;
+  url: string;
+  isAuthored?: boolean;
+  techStack: ISkill;
   height?: "tall" | "medium" | "short";
 };
