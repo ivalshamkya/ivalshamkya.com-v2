@@ -5,7 +5,6 @@ export async function fetchBlogs(username: string) {
     const response = await fetch(API_URL, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
-      next: { revalidate: 3600 }, // Cache for 1 hour
     });
 
     if (!response.ok) {

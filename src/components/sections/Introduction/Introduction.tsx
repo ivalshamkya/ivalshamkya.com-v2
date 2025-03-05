@@ -5,13 +5,14 @@ import GradientText from "@/components/modules/TextAnimation/GradientText/Gradie
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { BiPaperPlane } from "react-icons/bi";
 import { TypeAnimation } from "react-type-animation";
 
 const Introduction: React.FC = () => {
   return (
     <>
-      <div className="relative flex flex-col md:flex-row items-center gap-5 mb-10 overflow-hidden">
+      <div className="relative flex flex-col md:flex-row items-start md:items-center gap-5 mb-10 overflow-hidden">
         <div className="md:w-full">
           <div className="relative w-[120px] h-[120px] md:w-[260px] md:h-[260px] overflow-hidden rounded-lg">
             <Image
@@ -20,7 +21,7 @@ const Introduction: React.FC = () => {
               layout="fill"
               objectFit="cover"
               className="rounded-lg bg-[#0E0E10]"
-              priority
+              loading="lazy"
             />
           </div>
         </div>
@@ -51,14 +52,28 @@ const Introduction: React.FC = () => {
             shared experiences are always welcome here.
           </p>
           <div className="flex flex-row gap-1 md:gap-2.5">
-            <Button variant={"space"} size={"lg"}>
-              <Download />
-              Download Resume
-            </Button>
-            <Button variant={"space"} size={"lg"}>
-              <BiPaperPlane />
-              Send Email
-            </Button>
+            <Link
+              href={
+                "https://asset-ivalshamkya.s3.ap-southeast-3.amazonaws.com/Resume/19122024/Resume.pdf"
+              }
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Button variant={"space"} size={"lg"}>
+                <Download />
+                Download Resume
+              </Button>
+            </Link>
+            <Link
+              href={"mailto:work.ivalshamkya@gmail.com"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Button variant={"space"} size={"lg"}>
+                <BiPaperPlane />
+                Send Email
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

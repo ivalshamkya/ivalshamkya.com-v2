@@ -6,5 +6,5 @@ export interface Repository {
   language: string | null;
   forks_count: number;
   stargazers_count: number;
-  [key: string]: any;
+  [key: string]: React.ReactNode;
 }

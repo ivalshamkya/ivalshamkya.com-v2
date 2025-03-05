@@ -1,46 +1,74 @@
-"use client";
-
-import { motion } from "framer-motion";
+import { formatDate } from "@/lib/date-format";
 import Image from "next/image";
+import { BiComment, BiCommentDetail } from "react-icons/bi";
+import { FaComment, FaRegComment, FaRegHeart } from "react-icons/fa";
+import {
+  IoChatboxEllipsesOutline,
+  IoChatboxEllipsesSharp,
+  IoHeart,
+  IoHeartOutline,
+} from "react-icons/io5";
 
 interface CardProps {
   title: string;
   description: string;
-  imageUrl: string;
-  link: string;
+  cover_image: string;
+  published_timestamp: string;
+  comments_count: string;
+  tag_list: string[];
+  url: string;
 }
 
-export default function Card({ title, description, imageUrl, link }: CardProps) {
+export default function Card({
+  title,
+  description,
+  cover_image,
+  tag_list,
+  published_timestamp,
+  comments_count,
+  url,
+}: CardProps) {
   return (
-    <motion.a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      whileHover={{ scale: 1.01, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)" }}
-      whileTap={{ scale: 0.98 }}
-      transition={{ type: "spring", stiffness: 200, damping: 10 }}
-      className="block bg-neutral-50 dark:bg-neutral-900 border rounded-2xl shadow overflow-hidden hover:shadow-lg transition-shadow duration-300"
-    >
-      {/* Image Section */}
+    <div className="block bg-transparent rounded-2xl">
       <div className="relative w-full h-52">
         <Image
-          src={imageUrl}
+          src={cover_image}
           alt={title}
           layout="fill"
           objectFit="cover"
-          className="rounded-t-2xl"
+          className="rounded-2xl border border-neutral-900/10 dark:border-neutral-50/5"
+          loading="lazy"
         />
       </div>
 
-      {/* Content Section */}
-      <div className="p-5">
-        <h3 className="text-xl font-semibold text-neutral-800 dark:text-white">
+      <div className="py-1.5 px-0.5 flex flex-col gap-2">
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-fit text-lg font-semibold hover:text-[#4079ff] dark:hover:text-[#40ffaa]"
+        >
           {title}
-        </h3>
-        <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        </a>
+        <div className="flex gap-3">
+          <span className="text-xs">
+            {formatDate(published_timestamp, "MMM D, YY")}
+          </span>
+          <div className="flex items-center gap-1 text-xs">
+            <IoChatboxEllipsesOutline /> {comments_count} Comments
+          </div>
+        </div>
+        <p className="text-xs text-neutral-500 dark:text-neutral-300">
           {description}
         </p>
+        {/* <div className="flex items-center gap-1">
+          {tag_list.map((tag, index) => (
+            <p key={index} className="text-sm text-neutral-600 dark:text-neutral-400">
+              {`#${tag}`}
+            </p>
+          ))}
+        </div> */}
       </div>
-    </motion.a>
+    </div>
   );
 }
