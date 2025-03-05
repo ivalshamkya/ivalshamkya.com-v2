@@ -1,12 +1,8 @@
-import { fetchBlogs } from "@/app/api/devto/devto";
 import { Button } from "@/components/ui/button";
-import Card from "@/components/ui/Card";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdArrowOutward } from "react-icons/md";
 
 export default async function Blog() {
-  
-  const blogs = await fetchBlogs("ivalshamkya");
 
   return (
     <main className="relative overflow-hidden py-5 px-6 md:py-12 md:px-12 lg:py-20 lg:px-28 gap-3 lg:gap-20">

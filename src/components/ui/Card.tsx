@@ -1,12 +1,7 @@
 import { formatDate } from "@/lib/date-format";
 import Image from "next/image";
-import { BiComment, BiCommentDetail } from "react-icons/bi";
-import { FaComment, FaRegComment, FaRegHeart } from "react-icons/fa";
 import {
   IoChatboxEllipsesOutline,
-  IoChatboxEllipsesSharp,
-  IoHeart,
-  IoHeartOutline,
 } from "react-icons/io5";
 
 interface CardProps {
@@ -23,7 +18,6 @@ export default function Card({
   title,
   description,
   cover_image,
-  tag_list,
   published_timestamp,
   comments_count,
   url,
