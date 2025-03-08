@@ -23,7 +23,7 @@ export default function Card({
   url,
 }: CardProps) {
   return (
-    <div className="block bg-transparent rounded-2xl">
+    <div className="block bg-transparent rounded-2xl transition-all ease-linear duration-100 hover:scale-[1.01]">
       <div className="relative w-full h-52">
         <Image
           src={cover_image}

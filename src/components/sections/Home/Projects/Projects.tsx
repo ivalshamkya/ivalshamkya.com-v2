@@ -2,7 +2,7 @@ import React from 'react';
 import { dataProjects } from '@/common/constant/projects';
 import ProjectItem from './ProjectItem';
 import { BiRocket } from 'react-icons/bi';
-import { SectionTitle } from '../SectionTitle';
+import { SectionTitle } from '@/components/modules/SectionTitle';
 
 const Projects: React.FC = async () => {
   return (

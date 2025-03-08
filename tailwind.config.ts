@@ -12,6 +12,12 @@ export default {
   ],
   theme: {
     extend: {
+      transitionDuration: {
+        '50': '50ms'
+      },
+      transitionProperty: {
+        'width': 'width'
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

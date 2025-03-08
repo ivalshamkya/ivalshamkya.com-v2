@@ -4,7 +4,7 @@ import { dataExperiences } from "@/common/constant/experiences-list";
 import ExperienceCard from "./ExperienceCard";
 import { motion } from "framer-motion"
 import { BsSuitcaseLg } from "react-icons/bs";
-import { SectionTitle } from "../SectionTitle";
+import { SectionTitle } from "../../../modules/SectionTitle";
 
 const Experiences: React.FC = () => {
   const container = {
