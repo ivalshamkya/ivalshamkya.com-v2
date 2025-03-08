@@ -3,7 +3,6 @@
 import { SOCIALS } from "@/common/constant/social-links";
 import { Skills } from "@/components/modules/Skills";
 import SocialItem from "@/components/modules/Socials/SocialItem";
-import { Status } from "@/components/modules/Status";
 import GradientText from "@/components/modules/TextAnimation/GradientText/GradientText";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
