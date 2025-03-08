@@ -1,6 +1,6 @@
 'use client'
 
-import { dataSocials } from "@/common/constant/social-links";
+import { SOCIALS } from "@/common/constant/social-links";
 import SocialItem from "./SocialItem";
 
 const Socials: React.FC = () => {
@@ -14,7 +14,7 @@ const Socials: React.FC = () => {
           className={`flex flex-col gap-4 h-screen justify-center items-start ml-8 
             `}
         >
-          {dataSocials.map((social, i) => (
+          {SOCIALS.map((social, i) => (
             <SocialItem key={i} {...social}/>
           ))}
         </div>

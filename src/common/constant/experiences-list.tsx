@@ -19,15 +19,15 @@ export const dataExperiences: IExperience[] = [
       MongoDB: <SiMongodb size={"100%"} className="text-[#589636]" />,
     }
   },
-  {
-    id: 1,
-    company: {
-        name: 'Pao Dev',
-        logo: 'https://media.licdn.com/dms/image/v2/D560BAQGYtgTadofvWQ/company-logo_200_200/company-logo_200_200/0/1704953826751?e=1746662400&v=beta&t=IlZ59pL8DXuNJ3xthGISW5KA2ccPonby_2LHpzVUTfM'
-    },
-    position: "Software Engineer",
-    startDate: new Date("2021-01-01"),
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis, perspiciatis sint cumque, dolores suscipit dolorem nisi possimus porro eligendi odio perferendis inventore a eveniet enim explicabo nulla numquam officiis.",
-    skills: {}
-  },
+  // {
+  //   id: 1,
+  //   company: {
+  //       name: 'Pao Dev',
+  //       logo: 'https://media.licdn.com/dms/image/v2/D560BAQGYtgTadofvWQ/company-logo_200_200/company-logo_200_200/0/1704953826751?e=1746662400&v=beta&t=IlZ59pL8DXuNJ3xthGISW5KA2ccPonby_2LHpzVUTfM'
+  //   },
+  //   position: "Software Engineer",
+  //   startDate: new Date("2021-01-01"),
+  //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis, perspiciatis sint cumque, dolores suscipit dolorem nisi possimus porro eligendi odio perferendis inventore a eveniet enim explicabo nulla numquam officiis.",
+  //   skills: {}
+  // },
 ];
