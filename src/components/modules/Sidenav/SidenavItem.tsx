@@ -1,7 +1,9 @@
-import { Navbar } from "@/common/types/navbar";
+import { INavbar } from "@/common/types/navbar";
+import { Button } from "@/components/ui/button";
 
-interface ISidenavItem extends Navbar {
+interface ISidenavItem extends INavbar {
   active: string;
+  external?: boolean;
 }
 
 const SidenavItem: React.FC<ISidenavItem> = ({
@@ -9,19 +11,22 @@ const SidenavItem: React.FC<ISidenavItem> = ({
   navigate_url,
   icon,
   active,
+  external,
 }) => {
   return (
     <>
-      <a href={`/${navigate_url}`}
+      <a href={`${navigate_url}`}
+        rel={external ? "noopener noreferrer": ""}
+        target={external ? "_blank" : undefined}
         key={`${navigate}`}
-        className={`relative p-2 md:p-3 text-sm md:text-xl text-center transition-all ease-in duration-75 border border-transparent rounded-md
+        className={`relative text-sm md:text-xl text-center transition-all ease-in duration-75 border border-transparent rounded-md
           ${active === navigate_url ?
           'text-primary'
           : 'text-primary/10'
         }
           `}
       >
-        {icon}
+        <Button variant={"space"} size={"icon"}>{icon}</Button>
       </a>
     </>
   );

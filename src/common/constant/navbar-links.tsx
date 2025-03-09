@@ -1,9 +1,10 @@
-import { Navbar } from "@/common/types/navbar";
-import { BiRocket, BiSolidContact } from "react-icons/bi";
+import { INavbar } from "@/common/types/navbar";
+import { Leaf } from "lucide-react";
+import { BiSolidContact } from "react-icons/bi";
 import { IoHomeOutline } from "react-icons/io5";
 import { RiNewsFill } from "react-icons/ri";
 
-export const dataNavbar: Navbar[] = [
+export const dataNavbar: INavbar[] = [
     {
       id: 0,
       navigate: "Home",
@@ -13,10 +14,10 @@ export const dataNavbar: Navbar[] = [
     },
     {
       id: 1,
-      navigate: "Projects",
-      navigate_url: "projects",
+      navigate: "About",
+      navigate_url: "about",
       offset: -105,
-      icon: <BiRocket />,
+      icon: <Leaf />,
     },
     {
       id: 2,

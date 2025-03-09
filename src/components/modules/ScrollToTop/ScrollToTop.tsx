@@ -35,7 +35,7 @@ const ScrollToTop: React.FC = () => {
         <Button
           onClick={scrollToTop}
           variant={"space"}
-          className="fixed bottom-[1rem] right-[1rem] w-11 h-11 rounded-full shadow-lg hover:shadow-xl transition-shadow
+          className="fixed z-[999] bottom-[1rem] right-[1rem] w-11 h-11 rounded-full shadow-lg hover:shadow-xl transition-shadow
           "
           aria-label="Scroll to top"
         >

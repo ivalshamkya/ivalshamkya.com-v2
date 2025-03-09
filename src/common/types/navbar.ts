@@ -1,9 +1,9 @@
 import { JSX } from "react";
 
-export interface Navbar {
-    id: number;
+export interface INavbar {
+    id?: number;
     navigate: string;
     navigate_url: string;
-    offset: number;
-    icon: JSX.Element;
+    offset?: number;
+    icon?: JSX.Element;
 }

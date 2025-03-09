@@ -9,7 +9,7 @@ const Message: React.FC = () => {
   return (
     <>
       <SectionTitle
-        title="Email"
+        title="Message"
         description="If you have any questions or concerns, please don't hesitate to contact me. I am open to any work opportunities that align with my skills and interests."
         icon={<BiPaperPlane />}
       />
@@ -32,7 +32,7 @@ const Message: React.FC = () => {
             // onUpload={onUpload}
             // disabled={isUploading}
           />
-          
+
         </div>
         <div>
           <Button variant={"default"}>Send Message</Button>

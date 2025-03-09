@@ -4,10 +4,10 @@ import "@/app/globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { Navbar } from "@/components/modules/Navbar";
 import { Sidenav } from "@/components/modules/Sidenav";
-import { dataNavbar } from "@/common/constant/nav-links";
 import { Footer } from "@/components/modules/Footer";
 import { ScrollToTop } from "@/components/modules/ScrollToTop";
-import { Socials } from "@/components/modules/Socials";
+import { SOCIALS } from "@/common/constant/social-links";
+import { dataNavbar } from "@/common/constant/navbar-links";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -39,6 +39,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <ThemeProvider>
       <html lang="en" className="dark">
@@ -48,7 +49,7 @@ export default function RootLayout({
             `}
         >
           <div className="relative lg:grid lg:grid-cols-8 font-[family-name:var(--font-geist-sans)]">
-            <Sidenav active={""} direction={"ltr"} data={dataNavbar} />
+            <Sidenav defaultActive={""} direction={"ltr"} data={dataNavbar} />
             <div
               className="w-full my-0 mx-auto relative col-span-8 md:col-span-6"
               id="home"
@@ -57,7 +58,7 @@ export default function RootLayout({
               {children}
               <Footer />
             </div>
-            <Socials />
+            <Sidenav defaultActive={""} direction={"rtl"} data={SOCIALS} external={true} />
             <ScrollToTop />
           </div>
         </body>
