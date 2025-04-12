@@ -9,7 +9,7 @@ export default function NotFound() {
         style={{
           backgroundImage: `radial-gradient(circle at center, var(--tw-gradient-stops))`,
         }}
-        className="absolute -top-36 h-[65%] w-full overflow-visible blur-3xl bg-gradient-radial from-neutral-500/10 via-neutral-500/5 to-transparent"
+        className="absolute -top-36 h-[65%] w-full overflow-visible blur-3xl bg-gradient-radial from-neutral-900/10 via-neutral-900/5 to-transparent"
       ></div>
 
       <h1 className="text-5xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-white dark:to-neutral-500">

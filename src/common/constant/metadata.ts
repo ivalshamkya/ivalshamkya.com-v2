@@ -3,7 +3,7 @@ export const METADATA = {
     description:
       "Personal website, portfolio, blog, software engineer roadmap, programming tips of Ival Shamkya",
     keyword:
-      "ival shamkya, programming tips, belajar javascript, belajar typescript",
+      "ival shamkya, programming tips, portfolio, blog, software engineer",
     authors: {
       name: "Ival Shamkya",
       nickname: "Ival",

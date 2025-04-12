@@ -1,5 +1,8 @@
+"use client"
+
 import { INavbar } from "@/common/types/navbar";
 import SidenavItem from "./SidenavItem";
+import { usePathname } from "next/navigation";
 
 interface ISidenav {
   direction: "ltr" | "rtl";
@@ -14,6 +17,8 @@ const Sidenav: React.FC<ISidenav> = ({
   defaultActive = "",
   external = false,
 }) => {
+
+  const pathname = usePathname();
 
   return (
     <aside
@@ -31,7 +36,7 @@ const Sidenav: React.FC<ISidenav> = ({
           <SidenavItem 
             key={i} 
             {...navItem} 
-            active={defaultActive} 
+            active={pathname === `/${navItem.navigate_url}`} 
             external={external}
           />
         ))}

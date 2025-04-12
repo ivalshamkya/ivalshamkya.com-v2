@@ -13,8 +13,8 @@ const SectionTitle: React.FC<ISectionTitle> = ({
 }) => {
   return (
     <>
-      <div className="py-7 border-b border-primary/20 border-dashed mb-5">
-        <div className="flex items-center gap-3 mb-2">
+      <div className="py-6 border-b border-primary/20 border-dashed mb-5">
+        <div className="flex items-center gap-3 mb-1.5">
           <div className="text-2xl">{icon}</div>
           <h1 className="text-2xl font-semibold">{title}</h1>
         </div>

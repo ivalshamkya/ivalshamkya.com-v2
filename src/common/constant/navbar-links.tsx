@@ -1,8 +1,7 @@
 import { INavbar } from "@/common/types/navbar";
-import { Leaf } from "lucide-react";
-import { BiSolidContact } from "react-icons/bi";
-import { IoHomeOutline } from "react-icons/io5";
-import { RiNewsFill } from "react-icons/ri";
+import { BiSolidContact, BiSolidLeaf } from "react-icons/bi";
+import { IoHome } from "react-icons/io5";
+import { MdArticle } from "react-icons/md";
 
 export const dataNavbar: INavbar[] = [
     {
@@ -10,21 +9,21 @@ export const dataNavbar: INavbar[] = [
       navigate: "Home",
       navigate_url: "",
       offset: -100,
-      icon: <IoHomeOutline />,
+      icon: <IoHome />,
     },
     {
       id: 1,
       navigate: "About",
       navigate_url: "about",
       offset: -105,
-      icon: <Leaf />,
+      icon: <BiSolidLeaf />,
     },
     {
       id: 2,
       navigate: "Blog",
       navigate_url: "blog",
       offset: 0,
-      icon: <RiNewsFill />,
+      icon: <MdArticle />,
     },
     {
       id: 3,

@@ -8,6 +8,7 @@ import { Footer } from "@/components/modules/Footer";
 import { ScrollToTop } from "@/components/modules/ScrollToTop";
 import { SOCIALS } from "@/common/constant/social-links";
 import { dataNavbar } from "@/common/constant/navbar-links";
+import { METADATA } from "@/common/constant/metadata";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -31,7 +32,17 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Ival Shamkya",
-  description: "Ival Shamkya",
+  description: METADATA.description,
+  authors: [
+    {
+      url: METADATA.authors.url,
+      name: METADATA.authors.name
+    }
+  ],
+  creator: METADATA.creator,
+  keywords: METADATA.keyword,
+  openGraph: METADATA.openGraph,
+  icons: METADATA.profile.icon
 };
 
 export default function RootLayout({
@@ -49,7 +60,7 @@ export default function RootLayout({
             `}
         >
           <div className="relative lg:grid lg:grid-cols-8 font-[family-name:var(--font-geist-sans)]">
-            <Sidenav defaultActive={""} direction={"ltr"} data={dataNavbar} />
+            <Sidenav defaultActive={"about"} direction={"ltr"} data={dataNavbar} />
             <div
               className="w-full my-0 mx-auto relative col-span-8 md:col-span-6"
               id="home"

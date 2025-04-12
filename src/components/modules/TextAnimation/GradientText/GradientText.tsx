@@ -20,7 +20,7 @@ export default function GradientText({
 
     return (
         <div
-            className={`w-fit font-medium backdrop-blur transition-shadow duration-500 overflow-hidden cursor-pointer ${className}`}
+            className={`w-fit font-semibold backdrop-blur transition-shadow duration-500 overflow-hidden cursor-pointer ${className}`}
         >
             <div
                 className="w-fit relative z-2 text-transparent bg-cover animate-gradient"

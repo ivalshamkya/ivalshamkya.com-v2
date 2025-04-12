@@ -14,7 +14,7 @@ import { TypeAnimation } from "react-type-animation";
 const IntroductionSection: React.FC = () => {
   return (
     <>
-      <section>
+      <section className="mt-16 md:mt-0">
         <div className="absolute inset-0 -z-10 h-1/3 w-full bg-[linear-gradient(to_right,#80808018_1px,transparent_1px),linear-gradient(to_bottom,#80808018_1px,transparent_1px)] bg-[size:35px_35px] md:bg-[size:40px_40px] lg:bg-[size:45px_45px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_0%,#000_80%,transparent_100%)]"></div>
         <div
           style={{

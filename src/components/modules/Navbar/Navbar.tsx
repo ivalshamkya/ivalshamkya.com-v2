@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       {/* Main Navbar */}
-      <nav className="w-full py-3 px-4 md:py-8 md:px-8 border-b border-dashed border-neutral-300 dark:border-neutral-800 flex justify-between items-center z-10">
+      <nav className="fixed md:relative top-0 w-full py-3 px-4 md:py-8 md:px-8 bg-white dark:bg-neutral-950/[0.9] backdrop-blur-lg border-b border-dashed border-neutral-300 dark:border-neutral-800 flex justify-between items-center z-10">
         {/* Status indicator - visible only on desktop */}
         {METADATA.authors.isAvailable ? (
             <Status />
